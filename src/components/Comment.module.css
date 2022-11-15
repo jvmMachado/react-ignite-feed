@@ -73,6 +73,10 @@
   color: var(--green-300);
 }
 
+.userHasLiked {
+  color: var(--green-500) !important;
+}
+
 .commentBox footer svg {
   margin-right: 0.5rem;
 }

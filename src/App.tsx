@@ -6,17 +6,16 @@ import './global.css';
 
 import styles from './App.module.css';
 import { useEffect, useState } from "react";
+import { IPost } from "./interfaces/IPost";
 
 
 function App() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([] as IPost[]);
 
   useEffect(() => {
     fetch('http://localhost:3333/posts')
       .then(response => response.json())
       .then((data) => setPosts(data));
-
-    console.log('renderizou');
   }, []);
 
   return (
@@ -24,14 +23,18 @@ function App() {
       <Header></Header>
 
       <div className={styles.wrapper}>
-        <Sidebar />
+        <div className={styles.sidebarWrapper}>
+          <Sidebar />
+        </div>
         <main>
           {posts.map((post) =>
             <Post
               key={post.id}
+              id={post.id}
               author={post.author}
               content={post.content}
               publishedAt={post.publishedAt}
+              comments={post.comments}
             />
           )}
         </main>

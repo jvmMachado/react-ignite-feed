@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "author": {
         "avatarUrl": "https://github.com/jvmmachado.png",
         "name": "JV Machado",
@@ -21,10 +21,44 @@
           "content": "jane.design/doctorcare"
         }
       ],
-      "publishedAt": "2022-11-11T23:11:30.000Z"
+      "publishedAt": "2022-11-11T23:11:30.000Z",
+      "comments": [
+        {
+          "id": "1",
+          "author": {
+            "avatarUrl": "https://github.com/diego3g.png",
+            "name": "Diego Fernandes"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Fala dev!"
+            }
+          ],
+          "publishedAt": "2022-11-11T23:11:30.000Z",
+          "likes": 2,
+          "userHasLiked": false
+        },
+        {
+          "id": "2",
+          "author": {
+            "avatarUrl": "https://github.com/maykbrito.png",
+            "name": "Mayk Brito"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Fala galera, Mayk Brito na área!"
+            }
+          ],
+          "publishedAt": "2022-11-11T23:11:30.000Z",
+          "likes": 3,
+          "userHasLiked": true
+        }
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "author": {
         "avatarUrl": "https://github.com/diego3g.png",
         "name": "Diego Fernandes",
@@ -44,10 +78,11 @@
           "content": "jane.design/doctorcare"
         }
       ],
-      "publishedAt": "2022-11-11T23:11:30.000Z"
+      "publishedAt": "2022-11-11T23:11:30.000Z",
+      "comments": []
     },
     {
-      "id": 3,
+      "id": "3",
       "author": {
         "avatarUrl": "https://github.com/maykbrito.png",
         "name": "Mayk Brito",
@@ -67,7 +102,8 @@
           "content": "jane.design/doctorcare"
         }
       ],
-      "publishedAt": "2022-11-11T23:11:30.000Z"
+      "publishedAt": "2022-11-11T23:11:30.000Z",
+      "comments": []
     }
   ]
 }

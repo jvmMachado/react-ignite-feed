@@ -4,6 +4,9 @@
   background: var(--gray-800);
   border-radius: 8px;
   overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
 }
 
 .cover {
